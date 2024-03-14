@@ -1,2 +1,2 @@
-# Bracketing_System_Docs
+# Bracketing System Docs
 Documentation of a bracketing system for tournaments.
