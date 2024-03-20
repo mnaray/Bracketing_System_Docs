@@ -1,0 +1,6 @@
+# Glossary
+
+
+| Word | Description | Translation |
+| ---- | ----------- | ----------- |
+|      |             |             |
