@@ -7,9 +7,23 @@
 ### Requirements
 
 
-| **Req. No.** | **Mandatory/Optional** | **Func./Qual./Margin.** | **Requirement** |
-| :----------- | ---------------------- | :---------------------- | --------------- |
-|              |                        |                         |                 |
+| **Req. No.** | **Mandatory/Optional** | **Func./Qual./Margin.** | **Requirement**                                                                            |
+| ------------ | ---------------------- | ----------------------- | ------------------------------------------------------------------------------------------ |
+| 1            | Mandatory              | Func.                   | Login with Email and Password                                                              |
+| 2            | Mandatory              | Func.                   | Registration with Email and Password                                                       |
+| 3            | Mandatory              | Qual.                   | Login with OAuth (any Provider)                                                            |
+| 4            | Mandatory              | Qual.                   | Registration with OAuth (any Provider)                                                     |
+| 5            | Mandatory              | Func.                   | Creation of new brackets                                                                   |
+| 6            | Mandatory              | Func.                   | Deletion of old brackets                                                                   |
+| 7            | Mandatory              | Func.                   | Overview of all brackets that belong to the logged in user                                 |
+| 8            | Mandatory              | Func.                   | Ability to add competitors to a bracket before start                                       |
+| 9            | Mandatory              | Func.                   | Ability to remove competitors from a bracket before start                                  |
+| 10           | Mandatory              | Qual.                   | Handling of uneven competitor amounts (all matches must have two competitors as opponents) |
+| 11           | Mandatory              | Func.                   | Overview of all the brackets in their current state                                        |
+| 12           | Optional               | Func.                   | Clicking on the winner of a match makes them advance to the next one                       |
+| 13           | Optional               | Qual.                   | Correction of unstarted matches (editing outcome of parent matches)                        |
+| 14           | Mandatory              | Margin.                 | Use of Firestore DB instead of Realtime DB                                                 |
+| 15           | Mandatory              | Margin.                 | Use of Typescript to ensure type safety                                                    |
 
 ### Tech Stack
 
