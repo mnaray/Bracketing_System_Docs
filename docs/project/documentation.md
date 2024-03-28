@@ -37,9 +37,29 @@
 ### Work Packages
 
 
-| Nr. | Due Date | Description | Estimated Time (45 min.) |
-| --- | -------- | ----------- | ------------------------ |
-|     |          |             |                          |
+| Nr. | Due Date   | Description                                                                         | Estimated Time (in 45 min.) |
+| --- | ---------- | ----------------------------------------------------------------------------------- | --------------------------- |
+| 1   | 14.3.2024  | Set up repositories and GH-project                                                  | 2                           |
+| 2   | 21.3.2024  | Create requirements                                                                 | 2                           |
+| 3   | 21.3.2024  | Set up React project                                                                | 1                           |
+| 4   | 21.3.2024  | Set up Tailwinds                                                                    | 1                           |
+| 5   | 28.3.2024  | Create work packages                                                                | 3                           |
+| 6   | 21.3.2024  | Configure Firebase                                                                  | 2                           |
+| 7   | 21.3.2024  | Create DB schema for Firestore                                                      | 3                           |
+| 8   | 28.03.2024 | Overall research                                                                    | 5                           |
+| 9   | 28.03.2024 | Create UI wireframe                                                                 | 3                           |
+| 10  | 28.03.2024 | Implement internal DB service for client                                            | 4                           |
+| 11  | 28.03.2024 | Plan state management                                                               | 2                           |
+| 12  | 25.4.2024  | Write test cases (including test env.)                                              | 3                           |
+| 13  | 28.03.2024 | Implement local persistence where needed                                            | 3                           |
+| 14  | 4.4.2024   | Implement login/registration pages                                                  | 2                           |
+| 15  | 25.4.2024  | Implement bracket overview page (with test data)                                    | 3                           |
+| 16  | 25.4.2024  | Implement bracket representation                                                    | 5                           |
+| 17  | 25.4.2024  | Implement competitor management (including the clicking of winners and corrections) | 5                           |
+| 18  | 25.4.2024  | Implement handling of uneven competitor amounts                                     | 5                           |
+| 19  | 2.5.2024   | Test the project and document results                                               | 2                           |
+| 20  | 2.5.2024   | Evaluate the project                                                                | 1                           |
+| 21  | 2.5.2024   | Portfolio entry                                                                     | 3                           |
 
 **Total Time Spent (estimate)**
 
