@@ -151,6 +151,10 @@ This is the schema we will be using for the brackets:
     * name: string *(must be unique in the bracket)*
     * previousMatchId: string | undefined
 
+### Simple UI wireframe
+
+![](assets/20240328_104117_Bracketingsystems.drawio.png)
+
 ## Decide
 
 ### Database Type and Engine
