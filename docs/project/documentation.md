@@ -116,6 +116,41 @@ total lessons: 30 * 2 = 60
   **Visual Paradigm**
 - Version: 17.1
 
+### DB schema for Firestore
+
+Due to Firestore being a No-SQL database, we had to come up with a schema that can still represent relation to some extent. This was of great importance because to the bracket structure, which essentialy is a binary tree.
+
+This is the schema we will be using for the brackets:
+
+* root/
+    * etc.../
+    * brackets/
+        * bracketId/
+            * title: string
+            * createdAt: int
+            * editedAt: int
+            * ownerName: string *(username)*
+            * started: bool
+            * startedAt: int
+            * rounds: **IRound[]**
+
+
+**Interfaces:**
+
+* IRound:
+    * roundNumber: int
+    * matches: **IMatch[]**
+* IMatch:
+    * id: string
+    * competitor1: **ICompetitor**
+    * competitor2: **ICompetitor**
+    * winner: **ICompetitor** | undefined
+    * started: bool
+    * nextMatch: string | undefined
+* ICompetitor:
+    * name: string *(must be unique in the bracket)*
+    * previousMatchId: string | undefined
+
 ## Decide
 
 ### Database Type and Engine
