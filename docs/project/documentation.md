@@ -123,33 +123,33 @@ Due to Firestore being a No-SQL database, we had to come up with a schema that c
 This is the schema we will be using for the brackets:
 
 * root/
-  * etc.../
-  * brackets/
-    * bracketId/
-      * title: string
-      * createdAt: int
-      * editedAt: int
-      * ownerName: string *(username)*
-      * started: bool
-      * startedAt: int
-      * rounds: **IRound[]**
+    * etc.../
+    * brackets/
+        * bracketId/
+            * title: string
+            * createdAt: int
+            * editedAt: int
+            * ownerName: string *(username)*
+            * started: bool
+            * startedAt: int
+            * rounds: **IRound[]**
 
 
 **Interfaces:**
 
 * IRound:
-  * roundNumber: int
-  * matches: **IMatch[]**
+    * roundNumber: int
+    * matches: **IMatch[]**
 * IMatch:
-  * id: string
-  * competitor1: **ICompetitor**
-  * competitor2: **ICompetitor**
-  * winner: **ICompetitor** | undefined
-  * started: bool
-  * nextMatch: string | undefined
+    * id: string
+    * competitor1: **ICompetitor**
+    * competitor2: **ICompetitor**
+    * winner: **ICompetitor** | undefined
+    * started: bool
+    * nextMatch: string | undefined
 * ICompetitor:
-  * name: string *(must be unique in the bracket)*
-  * previousMatchId: string | undefined
+    * name: string *(must be unique in the bracket)*
+    * previousMatchId: string | undefined
 
 ## Decide
 
