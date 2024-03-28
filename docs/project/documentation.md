@@ -66,14 +66,14 @@
 Here is the calculation of how many lessons the project should take to implement. Please note, that a single lesson equals 45 minutes
 
 ```
-team members: 3
-total weeks: 7
+team members: 2
+total weeks: 6
 lessons per week: 5
-lessons per member: 7 * 5 = 35
-total lessons: 35 * 3 = 105
+lessons per member: 6 * 5 = 35
+total lessons: 30 * 2 = 60
 ```
 
-**The total amount of lessons should be 105** as every one of the 3 members works 5 lessons per week over the course of 7 weeks.
+**The total amount of lessons should be 60** as every one of the 2 members works 5 lessons per week over the course of 6 weeks.
 
 ### Test Cases
 
