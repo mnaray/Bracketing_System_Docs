@@ -22,9 +22,9 @@
 | 5            | Mandatory              | Func.                   | Creation of new brackets                                                                   |
 | 6            | Mandatory              | Func.                   | Deletion of old brackets                                                                   |
 | 7            | Mandatory              | Func.                   | Overview of all brackets that belong to the logged in user                                 |
-| 8            | Mandatory              | Func.                   | Ability to add competitors to a bracket before start                                       |
-| 9            | Mandatory              | Func.                   | Ability to remove competitors from a bracket before start                                  |
-| 10           | Mandatory              | Qual.                   | Handling of uneven competitor amounts (all matches must have two competitors as opponents) |
+| 8            | Optional               | Func.                   | Ability to add competitors to a bracket before start                                       |
+| 9            | Optional               | Func.                   | Ability to remove competitors from a bracket before start                                  |
+| 10           | Optional               | Qual.                   | Handling of uneven competitor amounts (all matches must have two competitors as opponents) |
 | 11           | Mandatory              | Func.                   | Overview of all the brackets in their current state                                        |
 | 12           | Optional               | Func.                   | Clicking on the winner of a match makes them advance to the next one                       |
 | 13           | Optional               | Qual.                   | Correction of unstarted matches (editing outcome of parent matches)                        |
