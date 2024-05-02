@@ -89,43 +89,33 @@ total lessons: 30 * 2 = 60
 ### Test Cases
 
 
-| Testcase<br />Nr. | Req.<br />Nr. | Requirements | Testenvironment | Input/Output | Predicted Output |
-| ----------------- | ------------- | ------------ | --------------- | ------------ | :--------------- |
-|                   |               |              |                 |              |                  |
+| Testcase-Nr. | Req.-Nr. | Preparations                                                                 | Test Environment | Input                                                                                                                                      | Predicted Output                                                                                                                   |
+| ------------ | -------- | ---------------------------------------------------------------------------- | ---------------- | :----------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
+| 1.1          | 1        | Open[the webpage](https://bracketing.mnaray.xyz)                             | Chrome           | Enter existing credentials                                                                                                                 | Redirect to homepage                                                                                                               |
+| 2.1          | 2        | Open[the webpage](https://bracketing.mnaray.xyz)                             | Chrome           | Enter new credentials                                                                                                                      | Redirect to homepage                                                                                                               |
+| 3.1          | 3        | Open[the webpage](https://bracketing.mnaray.xyz)                             | Chrome           | Click on "log in with Google"                                                                                                              | Account for Google accounts selection is shown                                                                                     |
+| 3.2          | 3        | 3.1                                                                          | Chrome           | Choose previously used account                                                                                                             | Redirect to homepage                                                                                                               |
+| 4.1          | 4        | Open[the webpage](https://bracketing.mnaray.xyz) (also delete browser cache) | Chrome           | Click on "log in with Google"                                                                                                              | Account for Google accounts selection is shown                                                                                     |
+| 4.2          | 4        | 4.1                                                                          | Chrome           | Choose new (never used to log in to the bracketing system) account                                                                         | Redirect to homepage                                                                                                               |
+| 5.1          | 5        | Open[the webpage](https://bracketing.mnaray.xyz) and log in                  | Chrome           | Click on "Create Bracket" button, enter title and competitor amount (must be of the basis 2 so it works. Examples: 2, 4, 8, 16, 32, 64...) | Bracket shows up on the list of the homepage                                                                                       |
+| 6.1          | 6        | 5.1                                                                          | Chrome           | Click on the red delete button                                                                                                             | Bracket to be deleted disappears                                                                                                   |
+| 7.1          | 7        | Open[the webpage](https://bracketing.mnaray.xyz) and log in                  | Chrome           | Go to the /home route                                                                                                                      | Every bracket that has been created shows up                                                                                       |
+| 8.1          | 8        | Open the detailed view of a bracket                                          | Chrome           | Click on "add competitor"                                                                                                                  | New competitor shows up in the bracket                                                                                             |
+| 9.1          | 9        | Open the detailed view of a bracket                                          | Chrome           | Click on "remove competitor" and select the competitor to be removed                                                                       | Competitor to be removed disappears                                                                                                |
+| 10.1         | 10       | Open[the webpage](https://bracketing.mnaray.xyz) and log in                  | Chrome           | Click on "Create Bracket" button, enter title and an uneven competitor amount (Examples: 5, 11, 13, 7 ...)                                 | Every competitor gets assigned to a match (noone is left out)                                                                      |
+| 11.1         | 11       | Open[the webpage](https://bracketing.mnaray.xyz) and log in                  | Chrome           | Go to the /home route                                                                                                                      | Every bracket item shows data about the current state (remaining competitors, round number, current match, most recent edit, etc.) |
+| 12.1         | 12       | Open the detailed view of a bracket                                          | Chrome           | Click on Competitor 1                                                                                                                      | Competitor 1 advances (visually on the screen as well)                                                                             |
+| 13.1         | 13       | Open the detailed view of a bracket (12.1)                                   | Chrome           | Click on Competitor 2                                                                                                                      | Competitor 1 gets replaced by Competitor 2                                                                                         |
 
 #### Testenvironment
 
-**Microsoft Visual Studio Enterprise (VS)**
-
-- Microsoft Visual Studio Enterprise 2022
-- Version: 17.9.1
-- VisualStudio.17.Release/17.9.1+34616.47
-- Microsoft .NET Framework: Version 4.8.09032
-- Installed Version: Enterprise
-- C# Tools: 4.9.0-3.24081.11+989117396f26e5453ff157df610d22ce45b6b0a9
-- Microsoft JVM Debugger: 1.0
-- NuGet Package Manager: 6.9.1
-- Visual Studio IntelliCode: 2.2
-
-  **Visual Studio Code (VSC)**
-- Version: 1.85.2 (user setup)
-- Commit: 8b3775030ed1a69b13e4f4c628c612102e30a681
-- Chromium: 114.0.5735.289
-- Electron: 25.9.7
-- ElectronBuildId: 26354273
-- Node.js: 18.15.0
-- V8: 11.4.183.29-electron.0
-- OS: Windows_NT x64 10.0.22621
-- Sandboxed: Yes
-
-  **Microsoft SQL Server Management Studio 18**
-- Version: 18.11.1
-
+  **Chrome (for PDFs und Documentation)**
   **Chrome (for PDFs und Documentation)**
 - Version 122.0.6261.58 (Official Build) (64-bit)
+**Chrome (for PDFs und Documentation)**
+- Version 122.0.6261.58 (Official Build) (64-bit)
 
-  **Visual Paradigm**
-- Version: 17.1
+- Version 124.0.6367.92 (Official Build) (64-bit)
 
 ### DB schema for Firestore
 
