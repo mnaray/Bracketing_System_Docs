@@ -33,10 +33,15 @@
 
 ### Tech Stack
 
-- Languages
-- Frameworks
-- Hosts
-- Database
+* Languages
+    * [Typescript](https://www.typescriptlang.org/)
+* Frameworks/Libraries
+    * [React](https://react.dev/)
+* Hosts
+    * [Netlify](https://www.netlify.com/)
+    * [Firebase](https://firebase.google.com/)
+* Database/Backend
+    * [Firestore](https://firebase.google.com/docs/firestore)
 
 ## Plan
 
