@@ -178,7 +178,7 @@ While skimming through the documentation of the new host, we found out that it a
 
 ### Linting and Linters
 
-Yet to be determined
+We opted to use [ESLint]() to keep the code evenly styled. The reason for our decision being, that we did not want to waste time on doing more research on linters that we don't know how to deal with. Both team members know how ESLint works so it was the optimal tool for this scenario.
 
 ## Realise
 
