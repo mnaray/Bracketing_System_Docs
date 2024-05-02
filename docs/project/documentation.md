@@ -211,16 +211,31 @@ This is the table that shows the actual time it took to fully implement the proj
 | 20  | 2.5.2024   | Evaluate the project                                                                | 1           | 1                        |
 | 21  | 2.5.2024   | Portfolio entry                                                                     | 3           | 3                        |
 
-
 ## Control
 
 ### Test Protocol
 
 
-| Test-Nr. | Note | Result | Date | Signature |
-| -------- | ---- | ------ | ---- | --------- |
-|          |      |        |      |           |
+| Test-Nr. | Note            | Result | Date     | Signature    |
+| -------- | --------------- | ------ | -------- | ------------ |
+| 1.1      |                 | OK     | 2.5.2024 | Marton Naray |
+| 2.1      |                 | OK     | 2.5.2024 | Marton Naray |
+| 3.1      |                 | OK     | 2.5.2024 | Marton Naray |
+| 3.2      |                 | OK     | 2.5.2024 | Marton Naray |
+| 4.1      |                 | OK     | 2.5.2024 | Marton Naray |
+| 4.2      |                 | OK     | 2.5.2024 | Marton Naray |
+| 5.1      |                 | OK     | 2.5.2024 | Marton Naray |
+| 6.1      |                 | OK     | 2.5.2024 | Marton Naray |
+| 7.1      |                 | OK     | 2.5.2024 | Marton Naray |
+| 8.1      | Not implemented | NOK    | 2.5.2024 | Marton Naray |
+| 9.1      | Not implemented | NOK    | 2.5.2024 | Marton Naray |
+| 10.1     | Not implemented | NOK    | 2.5.2024 | Marton Naray |
+| 11.1     | Not implemented | NOK    | 2.5.2024 | Marton Naray |
+| 12.1     |                 | OK     | 2.5.2024 | Marton Naray |
+| 13.1     |                 | OK     | 2.5.2024 | Marton Naray |
 
 ### Conclusion
+
+We successfully managed to implement all of the mandatory requirements in time. Some of the optional Requirements (8-11) were not implemented suffieciently, however. This was due to a lack of time and ressources.
 
 ## Evaluate
