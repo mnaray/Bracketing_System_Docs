@@ -239,3 +239,9 @@ This is the table that shows the actual time it took to fully implement the proj
 We successfully managed to implement all of the mandatory requirements in time. Some of the optional Requirements (8-11) were not implemented suffieciently, however. This was due to a lack of time and ressources.
 
 ## Evaluate
+
+Overall we can proudly say that the project went well during most phases. Some issues came up during the implementation phase, which we could use as a learning opportunity. We had some issues with the IDs of our bracket objects being undefined sometimes, for instance.
+
+We found out that Firebase does not map the database ID to the data it returns automatically, so we figured out how we could add an additional property to the already existent objects by destructuring.
+
+Furthermore, we were also able to benefit from pair-programming at the rather complicated parts of the code. This ensured that both of us could actually understand what the code we wrote did and why. The approach also turned out to be very helpful whenever we got stuck, as we had double the brain capacity working on the same problem from different perspecitves.
