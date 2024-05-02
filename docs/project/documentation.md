@@ -182,18 +182,35 @@ We opted to use [ESLint]() to keep the code evenly styled. The reason for our de
 
 ## Realise
 
-### Achitecture
-
-### Execution Table
-
 ### Execution Table
 
 This is the table that shows the actual time it took to fully implement the project.
 
 
-| Nr. | Due Date | Description | Actual Time | Estimated Time (45 min.) |
-| --- | -------- | ----------- | ----------- | ------------------------ |
-|     |          |             |             |                          |
+| Nr. | Due Date   | Description                                                                         | Actual Time | Estimated Time (45 min.) |
+| --- | ---------- | ----------------------------------------------------------------------------------- | ----------- | ------------------------ |
+| 1   | 14.3.2024  | Set up repositories and GH-project                                                  | 1           | 2                        |
+| 2   | 21.3.2024  | Create requirements                                                                 | 2           | 2                        |
+| 3   | 21.3.2024  | Set up React project                                                                | 1           | 1                        |
+| 4   | 21.3.2024  | Set up Tailwinds                                                                    | 1           | 1                        |
+| 5   | 28.3.2024  | Create work packages                                                                | 2           | 3                        |
+| 6   | 21.3.2024  | Configure Firebase                                                                  | 3           | 2                        |
+| 7   | 21.3.2024  | Create DB schema for Firestore                                                      | 3           | 3                        |
+| 8   | 28.03.2024 | Overall research                                                                    | 4           | 5                        |
+| 9   | 28.03.2024 | Create UI wireframe                                                                 | 3           | 3                        |
+| 10  | 28.03.2024 | Implement internal DB service for client                                            | 4           | 4                        |
+| 11  | 28.03.2024 | Plan state management                                                               | 4           | 2                        |
+| 12  | 25.4.2024  | Write test cases (including test env.)                                              | 3           | 3                        |
+| 13  | 28.4.2024  | Implement local persistence where needed                                            | 4           | 3                        |
+| 14  | 4.4.2024   | Implement login/registration pages                                                  | 4           | 2                        |
+| 15  | 25.4.2024  | Implement bracket overview page (with test data)                                    | 3           | 3                        |
+| 16  | 25.4.2024  | Implement bracket representation                                                    | 5           | 5                        |
+| 17  | 25.4.2024  | Implement competitor management (including the clicking of winners and corrections) | 6           | 5                        |
+| 18  | 25.4.2024  | Implement handling of uneven competitor amounts                                     | 0           | 5                        |
+| 19  | 2.5.2024   | Test the project and document results                                               | 3           | 2                        |
+| 20  | 2.5.2024   | Evaluate the project                                                                | 1           | 1                        |
+| 21  | 2.5.2024   | Portfolio entry                                                                     | 3           | 3                        |
+
 
 ## Control
 
