@@ -4,6 +4,12 @@
 
 ### Sources
 
+- [Firebase Documentation](https://firebase.google.com/docs)
+- [React Router Documentaiton](https://reactrouter.com/en/main)
+- [Firestore Indexes](https://stackoverflow.com/questions/53790175/why-does-this-firestore-query-require-an-index)
+- [Passing Parameters on Redirect](https://stackoverflow.com/questions/72017435/how-can-i-pass-parameters-to-route-with-navigate-function-in-react)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs/installation)
+
 ### Requirements
 
 
