@@ -4,6 +4,12 @@
 
 ### Sources
 
+- [Firebase Documentation](https://firebase.google.com/docs)
+- [React Router Documentaiton](https://reactrouter.com/en/main)
+- [Firestore Indexes](https://stackoverflow.com/questions/53790175/why-does-this-firestore-query-require-an-index)
+- [Passing Parameters on Redirect](https://stackoverflow.com/questions/72017435/how-can-i-pass-parameters-to-route-with-navigate-function-in-react)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs/installation)
+
 ### Requirements
 
 
@@ -16,9 +22,9 @@
 | 5            | Mandatory              | Func.                   | Creation of new brackets                                                                   |
 | 6            | Mandatory              | Func.                   | Deletion of old brackets                                                                   |
 | 7            | Mandatory              | Func.                   | Overview of all brackets that belong to the logged in user                                 |
-| 8            | Mandatory              | Func.                   | Ability to add competitors to a bracket before start                                       |
-| 9            | Mandatory              | Func.                   | Ability to remove competitors from a bracket before start                                  |
-| 10           | Mandatory              | Qual.                   | Handling of uneven competitor amounts (all matches must have two competitors as opponents) |
+| 8            | Optional               | Func.                   | Ability to add competitors to a bracket before start                                       |
+| 9            | Optional               | Func.                   | Ability to remove competitors from a bracket before start                                  |
+| 10           | Optional               | Qual.                   | Handling of uneven competitor amounts (all matches must have two competitors as opponents) |
 | 11           | Mandatory              | Func.                   | Overview of all the brackets in their current state                                        |
 | 12           | Optional               | Func.                   | Clicking on the winner of a match makes them advance to the next one                       |
 | 13           | Optional               | Qual.                   | Correction of unstarted matches (editing outcome of parent matches)                        |
@@ -27,10 +33,15 @@
 
 ### Tech Stack
 
-- Languages
-- Frameworks
-- Hosts
-- Database
+* Languages
+    * [Typescript](https://www.typescriptlang.org/)
+* Frameworks/Libraries
+    * [React](https://react.dev/)
+* Hosts
+    * [Netlify](https://www.netlify.com/)
+    * [Firebase](https://firebase.google.com/)
+* Database/Backend
+    * [Firestore](https://firebase.google.com/docs/firestore)
 
 ## Plan
 
@@ -78,43 +89,33 @@ total lessons: 30 * 2 = 60
 ### Test Cases
 
 
-| Testcase<br />Nr. | Req.<br />Nr. | Requirements | Testenvironment | Input/Output | Predicted Output |
-| ----------------- | ------------- | ------------ | --------------- | ------------ | :--------------- |
-|                   |               |              |                 |              |                  |
+| Testcase-Nr. | Req.-Nr. | Preparations                                                                 | Test Environment | Input                                                                                                                                      | Predicted Output                                                                                                                   |
+| ------------ | -------- | ---------------------------------------------------------------------------- | ---------------- | :----------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
+| 1.1          | 1        | Open[the webpage](https://bracketing.mnaray.xyz)                             | Chrome           | Enter existing credentials                                                                                                                 | Redirect to homepage                                                                                                               |
+| 2.1          | 2        | Open[the webpage](https://bracketing.mnaray.xyz)                             | Chrome           | Enter new credentials                                                                                                                      | Redirect to homepage                                                                                                               |
+| 3.1          | 3        | Open[the webpage](https://bracketing.mnaray.xyz)                             | Chrome           | Click on "log in with Google"                                                                                                              | Account for Google accounts selection is shown                                                                                     |
+| 3.2          | 3        | 3.1                                                                          | Chrome           | Choose previously used account                                                                                                             | Redirect to homepage                                                                                                               |
+| 4.1          | 4        | Open[the webpage](https://bracketing.mnaray.xyz) (also delete browser cache) | Chrome           | Click on "log in with Google"                                                                                                              | Account for Google accounts selection is shown                                                                                     |
+| 4.2          | 4        | 4.1                                                                          | Chrome           | Choose new (never used to log in to the bracketing system) account                                                                         | Redirect to homepage                                                                                                               |
+| 5.1          | 5        | Open[the webpage](https://bracketing.mnaray.xyz) and log in                  | Chrome           | Click on "Create Bracket" button, enter title and competitor amount (must be of the basis 2 so it works. Examples: 2, 4, 8, 16, 32, 64...) | Bracket shows up on the list of the homepage                                                                                       |
+| 6.1          | 6        | 5.1                                                                          | Chrome           | Click on the red delete button                                                                                                             | Bracket to be deleted disappears                                                                                                   |
+| 7.1          | 7        | Open[the webpage](https://bracketing.mnaray.xyz) and log in                  | Chrome           | Go to the /home route                                                                                                                      | Every bracket that has been created shows up                                                                                       |
+| 8.1          | 8        | Open the detailed view of a bracket                                          | Chrome           | Click on "add competitor"                                                                                                                  | New competitor shows up in the bracket                                                                                             |
+| 9.1          | 9        | Open the detailed view of a bracket                                          | Chrome           | Click on "remove competitor" and select the competitor to be removed                                                                       | Competitor to be removed disappears                                                                                                |
+| 10.1         | 10       | Open[the webpage](https://bracketing.mnaray.xyz) and log in                  | Chrome           | Click on "Create Bracket" button, enter title and an uneven competitor amount (Examples: 5, 11, 13, 7 ...)                                 | Every competitor gets assigned to a match (noone is left out)                                                                      |
+| 11.1         | 11       | Open[the webpage](https://bracketing.mnaray.xyz) and log in                  | Chrome           | Go to the /home route                                                                                                                      | Every bracket item shows data about the current state (remaining competitors, round number, current match, most recent edit, etc.) |
+| 12.1         | 12       | Open the detailed view of a bracket                                          | Chrome           | Click on Competitor 1                                                                                                                      | Competitor 1 advances (visually on the screen as well)                                                                             |
+| 13.1         | 13       | Open the detailed view of a bracket (12.1)                                   | Chrome           | Click on Competitor 2                                                                                                                      | Competitor 1 gets replaced by Competitor 2                                                                                         |
 
 #### Testenvironment
 
-**Microsoft Visual Studio Enterprise (VS)**
-
-- Microsoft Visual Studio Enterprise 2022
-- Version: 17.9.1
-- VisualStudio.17.Release/17.9.1+34616.47
-- Microsoft .NET Framework: Version 4.8.09032
-- Installed Version: Enterprise
-- C# Tools: 4.9.0-3.24081.11+989117396f26e5453ff157df610d22ce45b6b0a9
-- Microsoft JVM Debugger: 1.0
-- NuGet Package Manager: 6.9.1
-- Visual Studio IntelliCode: 2.2
-
-  **Visual Studio Code (VSC)**
-- Version: 1.85.2 (user setup)
-- Commit: 8b3775030ed1a69b13e4f4c628c612102e30a681
-- Chromium: 114.0.5735.289
-- Electron: 25.9.7
-- ElectronBuildId: 26354273
-- Node.js: 18.15.0
-- V8: 11.4.183.29-electron.0
-- OS: Windows_NT x64 10.0.22621
-- Sandboxed: Yes
-
-  **Microsoft SQL Server Management Studio 18**
-- Version: 18.11.1
-
+  **Chrome (for PDFs und Documentation)**
   **Chrome (for PDFs und Documentation)**
 - Version 122.0.6261.58 (Official Build) (64-bit)
+**Chrome (for PDFs und Documentation)**
+- Version 122.0.6261.58 (Official Build) (64-bit)
 
-  **Visual Paradigm**
-- Version: 17.1
+- Version 124.0.6367.92 (Official Build) (64-bit)
 
 ### DB schema for Firestore
 
@@ -177,22 +178,39 @@ While skimming through the documentation of the new host, we found out that it a
 
 ### Linting and Linters
 
-Yet to be determined
+We opted to use [ESLint]() to keep the code evenly styled. The reason for our decision being, that we did not want to waste time on doing more research on linters that we don't know how to deal with. Both team members know how ESLint works so it was the optimal tool for this scenario.
 
 ## Realise
-
-### Achitecture
-
-### Execution Table
 
 ### Execution Table
 
 This is the table that shows the actual time it took to fully implement the project.
 
 
-| Nr. | Due Date | Description | Actual Time | Estimated Time (45 min.) |
-| --- | -------- | ----------- | ----------- | ------------------------ |
-|     |          |             |             |                          |
+| Nr. | Due Date   | Description                                                                         | Actual Time | Estimated Time (45 min.) |
+| --- | ---------- | ----------------------------------------------------------------------------------- | ----------- | ------------------------ |
+| 1   | 14.3.2024  | Set up repositories and GH-project                                                  | 1           | 2                        |
+| 2   | 21.3.2024  | Create requirements                                                                 | 2           | 2                        |
+| 3   | 21.3.2024  | Set up React project                                                                | 1           | 1                        |
+| 4   | 21.3.2024  | Set up Tailwinds                                                                    | 1           | 1                        |
+| 5   | 28.3.2024  | Create work packages                                                                | 2           | 3                        |
+| 6   | 21.3.2024  | Configure Firebase                                                                  | 3           | 2                        |
+| 7   | 21.3.2024  | Create DB schema for Firestore                                                      | 3           | 3                        |
+| 8   | 28.03.2024 | Overall research                                                                    | 4           | 5                        |
+| 9   | 28.03.2024 | Create UI wireframe                                                                 | 3           | 3                        |
+| 10  | 28.03.2024 | Implement internal DB service for client                                            | 4           | 4                        |
+| 11  | 28.03.2024 | Plan state management                                                               | 4           | 2                        |
+| 12  | 25.4.2024  | Write test cases (including test env.)                                              | 3           | 3                        |
+| 13  | 28.4.2024  | Implement local persistence where needed                                            | 4           | 3                        |
+| 14  | 4.4.2024   | Implement login/registration pages                                                  | 4           | 2                        |
+| 15  | 25.4.2024  | Implement bracket overview page (with test data)                                    | 3           | 3                        |
+| 16  | 25.4.2024  | Implement bracket representation                                                    | 5           | 5                        |
+| 17  | 25.4.2024  | Implement competitor management (including the clicking of winners and corrections) | 6           | 5                        |
+| 18  | 25.4.2024  | Implement handling of uneven competitor amounts                                     | 0           | 5                        |
+| 19  | 2.5.2024   | Test the project and document results                                               | 3           | 2                        |
+| 20  | 2.5.2024   | Evaluate the project                                                                | 1           | 1                        |
+| 21  | 2.5.2024   | Portfolio entry                                                                     | 3           | 3                        |
+
 
 ## Control
 
